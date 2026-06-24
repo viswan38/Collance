@@ -10,4 +10,5 @@ fn main() {
     else if num < 10{
         print!("Less than 10")
     }
+    println!("Collance")
 }
