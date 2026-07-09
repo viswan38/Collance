@@ -1,11 +1,12 @@
 mod account;
 
-use crate::account::Account;
-
 fn main() {
-    let mut acc = Account::new(100);
+    let account = account::Account::new(
+        "Srivatsa".to_string(),
+        "password123".to_string()
+    );
 
-    acc.deposit(50);
-
-    println!("Balance: {}", acc.balance);
+    print!("{}", account.get_username());
+    print!("{}", account.printing());
+    //print!("{}", account.set_password("Srivatsa".to_string()));
 }
