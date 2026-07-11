@@ -1,5 +1,9 @@
-mod account;
+#![allow(unused_imports)]
+#![allow(dead_code)]
+#![allow(unused_variables)]
 
+mod account;
+mod database;
 fn main() {
     let account = account::Account::new(
         "Srivatsa".to_string(),
@@ -8,5 +12,4 @@ fn main() {
 
     print!("{}", account.get_username());
     print!("{}", account.printing());
-    //print!("{}", account.set_password("Srivatsa".to_string()));
 }
