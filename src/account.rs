@@ -27,8 +27,8 @@ impl Account {
         
     }
     pub fn compare(&self, a : &Account) -> bool {
-        if(self.username == a.get_username()){
-            if(self.password == a.get_password()){
+        if self.username == a.get_username() {
+            if self.password == a.get_password() {
                 return true;
             }
         }
