@@ -3,7 +3,7 @@
 #![allow(unused_variables)]
 
 mod account;
-mod Database;
+mod database;
 fn main() {
     let account = account::Account::new(
         "Srivatsa".to_string(),
