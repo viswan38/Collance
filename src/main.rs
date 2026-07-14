@@ -6,6 +6,8 @@ mod account;
 mod Database;
 mod Timeline;
 mod timeline;
+mod monetary;
+
 fn main() {
     let account = account::Account::new(
         "Srivatsa".to_string(),

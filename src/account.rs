@@ -26,14 +26,19 @@ impl Account {
         self.password = password;
         
     }
-    pub fn compare(&self, a : &Account) -> bool {
-        if self.username == a.get_username() {
-            if self.password == a.get_password() {
-                return true;
+    pub fn compare_account(&self, other : &Account) -> bool {
+        if self.username == other.get_username(){
+            if self.password == other.get_password(){
+                return true; 
             }
         }
+
         return false;
     }
+
+    //Work in progress, Next stage 
+    //pub fn compare_timeline(&self, a : &Timeline) -> bool {}
+
     pub fn printing(&self) -> i32 {
         let x = 10;
         print!("hello world");

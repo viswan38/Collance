@@ -1,12 +1,12 @@
 use serde::{Serialize, Deserialize};
 #[derive(Serialize, Deserialize, Debug)]
-pub struct Timeline{
-    pub date: String,
-    pub check: i64,
+pub struct Monetary{
+    pub amount: i64,
+    pub currency: String,
 }
 
-impl Timeline{
+impl Monetary{
     pub fn new(){
 
-    }    
+    }
 }
